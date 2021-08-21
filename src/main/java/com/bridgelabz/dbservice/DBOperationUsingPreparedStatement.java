@@ -18,14 +18,14 @@ public class DBOperationUsingPreparedStatement implements IDBOpeartion {
 	
 	Scanner scanner = new Scanner(System.in);
 
-//	String CREATE_TABLE_QUERY = "create table IF NOT EXISTS employee_payroll(id int, name varchar(255),salary int)";
+	String CREATE_TABLE_QUERY = "create table IF NOT EXISTS employee_payroll(id int, name varchar(255),salary int)";
 	String UPDATE_QUERY = "UPDATE employee SET salary = ? WHERE id=?";
 	String SELECT_QUERY = "SELECT * FROM employee_details";
 
 	@Override
 	public void createTable() {
 		try {
-//			preparedStatement = connection.prepareStatement(CREATE_TABLE_QUERY);
+			preparedStatement = connection.prepareStatement(CREATE_TABLE_QUERY);
 			preparedStatement.execute();
 			System.out.println("Table created succefully");
 		} catch (SQLException e) {
