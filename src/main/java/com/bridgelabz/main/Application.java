@@ -25,6 +25,7 @@ public class Application {
 
 		dbOperationPreparedSatement.createTable();
 		dbOperationPreparedSatement.insertRecordsInTable();
+		dbOperationPreparedSatement.updateRecordsInTable();
 		dbOperationPreparedSatement.fetchAllRecords();
 
 	}

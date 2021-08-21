@@ -55,4 +55,9 @@ public class DBOperationUsingStatement implements IDBOpeartion {
 		}
 	}
 
+	@Override
+	public void updateRecordsInTable() {
+		
+	}
+
 }

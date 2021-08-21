@@ -5,5 +5,7 @@ public interface IDBOpeartion {
 	
 	public void insertRecordsInTable();
 	
+	public void updateRecordsInTable();
+	
 	public void fetchAllRecords();
 }
